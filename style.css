@@ -1,0 +1,175 @@
+#header {
+  text-align: center;
+}
+
+#header>p {
+  width: 39%;
+  margin: auto;
+}
+
+#doctors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 470px;
+  width: 90%;
+  margin: 2px auto;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#doctors>div>img {
+  width: 100%;
+}
+
+#doctors>div>h3 {
+  font-size: 15px;
+}
+
+#doctors>div>h6 {
+  font-size: 12px;
+  margin: 0;
+}
+
+#doctors>div>p {
+  font-size: 16px;
+  width: 70%;
+  margin: 18px auto;
+  text-align: center;
+}
+
+
+#doctors>div {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 90%;
+  margin: auto;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+}
+
+.cards>div:nth-child(5){
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.button>:nth-child(1){
+  background: rgb(235, 221, 221);
+  color: rgb(2, 51, 51);
+  border: 0px;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.button>:nth-child(2){
+  background:rgb(255, 127, 127);
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+#service{
+  display: grid;
+  margin: 60px auto;
+  width: 70%;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,200px);
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#service>div>img{
+  display: block;
+  margin: auto;
+}
+
+#service>div>h5{
+  text-align: center;
+}
+#service>div>p{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* keep media queries at the bottom */
+/* Medium screens */
+@media all and (min-width: 451px) and (max-width: 750px) {
+
+  #doctors {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 470px 470px;
+    width: 90%;
+    margin: 2px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  #service{
+    display: grid;
+    margin: 60px auto;
+    width: 70%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,200px);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+}
+
+/* Small screens */
+@media all and (min-width: 100px) and (max-width: 450px) {
+
+  #doctors {
+    grid-template-columns: 100%;
+    grid-template-rows:repeat(4,400px);
+    width: 90%;
+    margin: 62px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+
+  #service{
+    display: grid;
+    margin: 60px auto;
+    width: 70%;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,200px);     
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+
+}
